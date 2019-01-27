@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multilang.iOS", "Multilang.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multilang.Shared", "Multilang.Shared\Multilang.Shared.csproj", "{C887F4C2-78F9-4ED3-8178-12AF0F40151E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multilang.LanguageResources", "Multilang.LanguageResources\Multilang.LanguageResources.csproj", "{8052FE41-906B-4D9F-8F9F-B8A53E384A08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,18 @@ Global
 		{C887F4C2-78F9-4ED3-8178-12AF0F40151E}.Release|iPhone.Build.0 = Release|Any CPU
 		{C887F4C2-78F9-4ED3-8178-12AF0F40151E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{C887F4C2-78F9-4ED3-8178-12AF0F40151E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Release|iPhone.Build.0 = Release|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{8052FE41-906B-4D9F-8F9F-B8A53E384A08}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
