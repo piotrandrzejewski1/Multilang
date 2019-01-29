@@ -18,7 +18,7 @@ namespace Multilang.Android
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.main);
             SharedStartup.Init();
 
             _vm = SimpleIoc.Default.GetInstance<MainVm>();

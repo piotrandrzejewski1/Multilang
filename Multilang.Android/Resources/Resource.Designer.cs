@@ -64,7 +64,7 @@ namespace Multilang.Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Main = 2130837504;
+			public const int main = 2130837504;
 			
 			static Layout()
 			{
