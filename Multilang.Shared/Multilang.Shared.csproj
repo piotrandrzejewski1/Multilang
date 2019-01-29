@@ -51,5 +51,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Multilang.LanguageResources\Multilang.LanguageResources.csproj">
+      <Project>{8052FE41-906B-4D9F-8F9F-B8A53E384A08}</Project>
+      <Name>Multilang.LanguageResources</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

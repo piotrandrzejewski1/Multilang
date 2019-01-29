@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Multilang.LanguageResources;
 
 namespace Multilang.Shared.Vm
 {
@@ -9,7 +10,7 @@ namespace Multilang.Shared.Vm
 
         public MainVm()
         {
-            SampleText = "Sample text";
+            SampleText = AppResources.Main_HellowWorld;
         }
         
         public string SampleText
