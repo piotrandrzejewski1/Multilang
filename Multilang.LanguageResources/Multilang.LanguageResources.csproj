@@ -34,22 +34,58 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <Content Include="ResxToAndroidTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ResxToAndroidTemplate.cs</LastGenOutput>
+    </Content>
+    <Content Include="ResToOthers.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ResToOthers.log</LastGenOutput>
+      <LastOutputs>
+..\Multilang.Android\Resources\values\strings.xml
+..\Multilang.Android\Resources\values-ar\strings.xml
+</LastOutputs>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppResources.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.ar.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AppResources.Designer.cs">
       <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ResxToAndroidTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResxToAndroidTemplate.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      <RunCustomToolOn>ResToOthers.tt</RunCustomToolOn>
     </EmbeddedResource>
     <EmbeddedResource Include="AppResources.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.ar.Designer.cs</LastGenOutput>
+      <RunCustomToolOn>ResToOthers.tt</RunCustomToolOn>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResToOthers.log">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResToOthers.tt</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

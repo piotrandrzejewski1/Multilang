@@ -10,7 +10,7 @@ namespace Multilang.Shared.Vm
 
         public MainVm()
         {
-            SampleText = AppResources.Main_HellowWorld;
+            SampleText = AppResources.Main_RealHelloWorld;
         }
         
         public string SampleText
