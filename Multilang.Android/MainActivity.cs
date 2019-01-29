@@ -23,12 +23,26 @@ namespace Multilang.Android
 
             _vm = SimpleIoc.Default.GetInstance<MainVm>();
             
-            _textView1 = FindViewById<TextView>(Resource.Id.textView1);
-            this.SetBinding(() => _vm.SampleText, () => _textView1.Text);
+            this.SetBinding(() => _vm.SampleText, () => TextView1.Text);
 
             _button1 = FindViewById<Button>(Resource.Id.button1);
             _button1.Click += (sender, args) => { _vm.ChangeTextCommand.Execute(null); };
         }
+
+
+        #region Views
+        private TextView TextView1
+        {
+            get
+            {
+                if (_textView1 == null)
+                    _textView1 = FindViewById<TextView>(Resource.Id.textView1);
+
+                return _textView1;
+            }
+        }
+
+        #endregion
     }
 }
 
