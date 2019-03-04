@@ -11,6 +11,7 @@ namespace Multilang.Shared.Vm
         public MainVm()
         {
             SampleText = AppResources.Main_RealHelloWorld;
+            var asd = "asdas";
         }
         
         public string SampleText
